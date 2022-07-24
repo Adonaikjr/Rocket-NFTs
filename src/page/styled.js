@@ -192,10 +192,38 @@ export const Session = styled.div`
 
 export const Banner = styled.div`
     width: 1158px;
-height: 300px;
-        
-        width: 75%;
+    height: 300px;
+    width: 75%;
     background-image: url(${banner});
     margin-top: 71px;
+`
 
+export const BoxC = styled.div`\
+    h2{
+        font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 61px;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 61px;
+    margin-left: 87px;
+    >span{ 
+        color: ${({theme}) => theme.COLORS.PINK};
+    }
+}
+margin-top: 150px;
+
+`
+export const SpaceTwo = styled.div`
+    margin-top: 158px;
+    display: flex;
+`
+export const Justifypopulares = styled.div`
+    border-right: 1px solid ${({theme}) => theme.COLORS.WHITE};
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
 `

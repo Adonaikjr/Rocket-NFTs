@@ -1,4 +1,4 @@
-import { Container, Header, Menu, BoxA, SpaceOne,  Avatars, GalleryOne, GalleryTwo, BoxB, Numbers, Session, Banner } from "./styled"
+import { Container, Header, Menu, BoxA, SpaceOne,  Avatars, GalleryOne, GalleryTwo, BoxB, Numbers, Session, Banner, BoxC, SpaceTwo, Justifypopulares } from "./styled"
 import { Button } from "../components/Button"
 import art1 from '../assets/artista-1.png'
 import art2 from '../assets/artista-2.png'
@@ -17,7 +17,16 @@ import gallery6 from '../assets/galeria-6.png'
 import gallery7 from '../assets/galeria-7.png'
 import gallery8 from '../assets/galeria-8.png'
 
-import { SectionNumbers } from '../components/Numbers'
+
+import astro1 from '../assets/astronauta-1.png'
+import astro2 from '../assets/astronauta-2.png'
+import astro3 from '../assets/astronauta-3.png'
+import astro4 from '../assets/astronauta-4.png'
+
+import arrow from '../assets/arrow-white.svg'
+
+import { SectionNumbers } from '../components/SectionNumbers'
+import { Populares } from "../components/Populares"
 export function App() {
 
   return (
@@ -82,6 +91,39 @@ export function App() {
         </Numbers>
         <Banner/>
       </BoxB>
+      <BoxC>
+        <h2><span>Populares</span> da semana</h2>
+        <SpaceTwo>
+          <Justifypopulares>
+            <Populares 
+          title='Astronauta 1' 
+          span={ <img src={arrow}/> } 
+          user='Mayk Brito' 
+          rkt='1.50 RKT' 
+          img={ <img src={astro1}/> }/>
+              <Populares 
+          title='Astronauta 1' 
+          span={<img src={arrow}/>} 
+          user='Mayk Brito' 
+          rkt='1.50 RKT' 
+          img={ <img src={astro1}/> }/>
+          </Justifypopulares>
+          <Justifypopulares>
+              <Populares 
+          title='Astronauta 1' 
+          span={<img src={arrow}/>} 
+          user='Mayk Brito' 
+          rkt='1.50 RKT' 
+          img={ <img src={astro1}/> }/>
+              <Populares 
+          title='Astronauta 1' 
+          span={<img src={arrow}/>} 
+          user='Mayk Brito' 
+          rkt='1.50 RKT' 
+          img={ <img src={astro1}/> }/>
+          </Justifypopulares>
+        </SpaceTwo>
+      </BoxC>
     </Container>
   )
 }
